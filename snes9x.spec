@@ -2,8 +2,8 @@ Summary:	Super NES emulator
 Summary(pl):	Emulator Super NES
 Name:		snes9x
 Version:	1.42
-Release:	1
-Group:		Application/Emulators
+Release:	2
+Group:		Applications/Emulators
 License:	BSD-style
 Source0:	http://www.lysator.liu.se/%{name}/%{version}/%{name}-%{version}-src.tar.gz
 # Source0-md5:	1e8af4c590e35352ddac58d25a468676
