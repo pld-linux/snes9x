@@ -47,7 +47,7 @@ cp -f /usr/share/automake/config.sub .
 %{__autoconf}
 %configure
 %{__make} \
-	OPTIMIZE="%{rpmcflags} -fno-exceptions -Wall -W -Wno-unused-parameter -pedantic -pipe"
+	OPTIMISE="%{rpmcflags} -fno-exceptions -Wall -W -Wno-unused-parameter -pedantic -pipe"
 
 %install
 rm -rf $RPM_BUILD_ROOT
