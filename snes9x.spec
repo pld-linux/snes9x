@@ -1,3 +1,6 @@
+
+# TODO: shared zlib, kill probably unnecessary -lnsl
+
 Summary:	Super NES emulator
 Summary(pl):	Emulator Super NES
 Name:		snes9x
