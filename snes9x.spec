@@ -29,9 +29,10 @@ for the SNES and Super Famicom Nintendo game systems on your PC or
 Workstation.
 
 %description
-Snes9X jest przeno¶nym, darmowym emulatorem Super Nintendo Entertainment
-System(SNES). Podstawowo pozwala graæ w wiêkszo¶æ gier przeznaczonych dla
-SNES i systemów gier Super Famicom Nintendo na Twoi PC lub stacji roboczej.
+Snes9X jest przeno¶nym, darmowym emulatorem Super Nintendo
+Entertainment System (SNES). Zasadniczo pozwala graæ w wiêkszo¶æ gier
+przeznaczonych dla SNES i systemów gier Super Famicom Nintendo na PC
+lub stacji roboczej.
 
 %prep
 %setup -q -n %{name}-%{version}-src
