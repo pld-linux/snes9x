@@ -1,0 +1,13 @@
+--- snes9x/configure.in~	2003-12-04 18:03:08.000000000 +0100
++++ snes9x/configure.in	2004-08-24 03:46:54.801288712 +0200
+@@ -531,8 +531,8 @@
+ fi
+ 
+ dnl Checks for libraries.
+-AC_CHECK_LIB(nsl, gethostbyname)
+-AC_CHECK_LIB(socket, socket)
++#AC_CHECK_LIB(nsl, gethostbyname)
++#AC_CHECK_LIB(socket, socket)
+ SYSLIBS="$SYSLIBS $LIBS"
+ 	
+ BASEDIR=`(cd $srcdir/.. ; pwd)`
