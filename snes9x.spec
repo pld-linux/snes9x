@@ -1,15 +1,14 @@
-
-# TODO: shared zlib, kill probably unnecessary -lnsl
-
 Summary:	Super NES emulator
 Summary(pl):	Emulator Super NES
 Name:		snes9x
 Version:	1.42
-Release:	0.2
+Release:	1
 Group:		Application/Emulators
 License:	BSD-style
 Source0:	http://www.lysator.liu.se/%{name}/%{version}/%{name}-%{version}-src.tar.gz
 # Source0-md5:	1e8af4c590e35352ddac58d25a468676
+Patch0:		%{name}-no_nsl.patch
+Patch1:		%{name}-system_zlib.patch
 URL:		http://www.snes9x.com/
 BuildRequires:	XFree86-devel
 BuildRequires:	autoconf
@@ -42,6 +41,8 @@ lub stacji roboczej.
 
 %prep
 %setup -q -n %{name}-%{version}-src
+%patch0 -p0
+%patch1 -p0
 
 %build
 cd %{name}
