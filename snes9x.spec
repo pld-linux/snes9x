@@ -2,25 +2,28 @@ Summary:	Super NES emulator
 Summary(pl):	Emulator Super NES
 Name:		snes9x
 Version:	1.42
-Release:	0.1
+Release:	0.2
 Group:		Application/Emulators
 License:	BSD-style
-URL:		http://www.snes9x.com/
 Source0:	http://www.lysator.liu.se/%{name}/%{version}/%{name}-%{version}-src.tar.gz
 # Source0-md5:	1e8af4c590e35352ddac58d25a468676
+URL:		http://www.snes9x.com/
+BuildRequires:	XFree86-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	XFree86-devel
+BuildRequires:	libstdc++-devel
 %ifarch %{ix86}
 BuildRequires:	nasm
 %endif
 BuildRequires:	zlib-devel
-Provides:	snes9x-common
-Obsoletes:	snes9x-common
 Provides:	snes9x-X
-Obsoletes:	snes9x-X
 Provides:	snes9x-binary
+Provides:	snes9x-common
+Obsoletes:	snes9x-X
+Obsoletes:	snes9x-common
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		specflags	-fomit-frame-pointer
 
 %description
 Snes9X is a portable, freeware Super Nintendo Entertainment System
@@ -43,7 +46,8 @@ cp -f /usr/share/automake/config.sub .
 %{__aclocal}
 %{__autoconf}
 %configure
-%{__make}
+%{__make} \
+	OPTIMIZE="%{rpmcflags} -fno-exceptions -Wall -W -Wno-unused-parameter -pedantic -pipe"
 
 %install
 rm -rf $RPM_BUILD_ROOT
