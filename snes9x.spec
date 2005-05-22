@@ -5,7 +5,7 @@ Version:	1.42
 Release:	2
 Group:		Applications/Emulators
 License:	BSD-style
-Source0:	http://www.lysator.liu.se/%{name}/%{version}/%{name}-%{version}-src.tar.gz
+Source0:	http://www.lysator.liu.se/snes9x/%{version}/%{name}-%{version}-src.tar.gz
 # Source0-md5:	1e8af4c590e35352ddac58d25a468676
 Patch0:		%{name}-no_nsl.patch
 Patch1:		%{name}-system_zlib.patch
