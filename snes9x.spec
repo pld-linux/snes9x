@@ -32,7 +32,7 @@ Snes9X is a portable, freeware Super Nintendo Entertainment System
 for the SNES and Super Famicom Nintendo game systems on your PC or
 Workstation.
 
-%description
+%description -l pl
 Snes9X jest przeno¶nym, darmowym emulatorem Super Nintendo
 Entertainment System (SNES). Zasadniczo pozwala graæ w wiêkszo¶æ gier
 przeznaczonych dla SNES i systemów gier Super Famicom Nintendo na PC
