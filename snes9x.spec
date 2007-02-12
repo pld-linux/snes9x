@@ -1,5 +1,5 @@
 Summary:	Super NES emulator
-Summary(pl):	Emulator Super NES
+Summary(pl.UTF-8):   Emulator Super NES
 Name:		snes9x
 Version:	1.43
 Release:	1
@@ -32,10 +32,10 @@ Snes9X is a portable, freeware Super Nintendo Entertainment System
 for the SNES and Super Famicom Nintendo game systems on your PC or
 Workstation.
 
-%description -l pl
-Snes9X jest przeno¶nym, darmowym emulatorem Super Nintendo
-Entertainment System (SNES). Zasadniczo pozwala graæ w wiêkszo¶æ gier
-przeznaczonych dla SNES i systemów gier Super Famicom Nintendo na PC
+%description -l pl.UTF-8
+Snes9X jest przenoÅ›nym, darmowym emulatorem Super Nintendo
+Entertainment System (SNES). Zasadniczo pozwala graÄ‡ w wiÄ™kszoÅ›Ä‡ gier
+przeznaczonych dla SNES i systemÃ³w gier Super Famicom Nintendo na PC
 lub stacji roboczej.
 
 %prep
