@@ -1,5 +1,5 @@
 Summary:	Super NES emulator
-Summary(pl.UTF-8):   Emulator Super NES
+Summary(pl.UTF-8):	Emulator Super NES
 Name:		snes9x
 Version:	1.43
 Release:	1
